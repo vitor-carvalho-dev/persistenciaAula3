@@ -1,0 +1,334 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\service\\implementations\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\service\\implementations\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\service\\interface\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\service\\interface\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\dtos\\salvarvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\dtos\\salvarvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\dtos\\vendadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\dtos\\vendadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\dtos\\salvarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\dtos\\salvarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\dtos\\salvarclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\dtos\\salvarclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\dtos\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\dtos\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\dtos\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\dtos\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\entidades\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\entidades\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\entidades\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\entidades\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\entidades\\vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\entidades\\vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\entidades\\itemvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\entidades\\itemvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\migrations\\20250614141853_criacaoinicialbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\migrations\\20250614141853_criacaoinicialbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\migrations\\sqlservercontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\migrations\\sqlservercontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|c:\\users\\vitor.nononha\\desktop\\projeto_aula2\\persistenciaaula3\\webapivendas\\webapivendas\\data\\context\\sqlservercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26893273-32CF-4A68-AF69-4DE7C66E7DB6}|WebApiVendas\\WebApiVendas.csproj|solutionrelative:webapivendas\\data\\context\\sqlservercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Service\\Implementations\\ClienteService.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Service\\Implementations\\ClienteService.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Service\\Implementations\\ClienteService.cs",
+              "RelativeToolTip": "WebApiVendas\\Service\\Implementations\\ClienteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T17:09:10.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Service\\Interface\\IClienteService.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Service\\Interface\\IClienteService.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Service\\Interface\\IClienteService.cs",
+              "RelativeToolTip": "WebApiVendas\\Service\\Interface\\IClienteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:53:08.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SalvarVenda.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Dtos\\SalvarVenda.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Dtos\\SalvarVenda.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Dtos\\SalvarVenda.cs",
+              "RelativeToolTip": "WebApiVendas\\Dtos\\SalvarVenda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:40:45.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VendaDto.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Dtos\\VendaDto.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Dtos\\VendaDto.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Dtos\\VendaDto.cs",
+              "RelativeToolTip": "WebApiVendas\\Dtos\\VendaDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:39:10.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SalvarProduto.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Dtos\\SalvarProduto.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Dtos\\SalvarProduto.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Dtos\\SalvarProduto.cs",
+              "RelativeToolTip": "WebApiVendas\\Dtos\\SalvarProduto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:35:42.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProdutoDto.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Dtos\\ProdutoDto.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Dtos\\ProdutoDto.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Dtos\\ProdutoDto.cs",
+              "RelativeToolTip": "WebApiVendas\\Dtos\\ProdutoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:34:23.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SalvarClienteDto.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Dtos\\SalvarClienteDto.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Dtos\\SalvarClienteDto.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Dtos\\SalvarClienteDto.cs",
+              "RelativeToolTip": "WebApiVendas\\Dtos\\SalvarClienteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:22:58.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClienteDto.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Dtos\\ClienteDto.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Dtos\\ClienteDto.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Dtos\\ClienteDto.cs",
+              "RelativeToolTip": "WebApiVendas\\Dtos\\ClienteDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:21:25.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250614141853_criacaoInicialBD.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Migrations\\20250614141853_criacaoInicialBD.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Migrations\\20250614141853_criacaoInicialBD.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Migrations\\20250614141853_criacaoInicialBD.cs",
+              "RelativeToolTip": "WebApiVendas\\Migrations\\20250614141853_criacaoInicialBD.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T14:18:53.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Program.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Program.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Program.cs",
+              "RelativeToolTip": "WebApiVendas\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T14:09:40.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApiVendas\\appsettings.json",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\appsettings.json",
+              "RelativeToolTip": "WebApiVendas\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-14T13:57:54.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ItemVenda.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Entidades\\ItemVenda.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Entidades\\ItemVenda.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Entidades\\ItemVenda.cs",
+              "RelativeToolTip": "WebApiVendas\\Entidades\\ItemVenda.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:24:15.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Venda.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Entidades\\Venda.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Entidades\\Venda.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Entidades\\Venda.cs",
+              "RelativeToolTip": "WebApiVendas\\Entidades\\Venda.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:23:55.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Entidades\\Produto.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Entidades\\Produto.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Entidades\\Produto.cs",
+              "RelativeToolTip": "WebApiVendas\\Entidades\\Produto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:23:38.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SQLServerContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Migrations\\SQLServerContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Migrations\\SQLServerContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Migrations\\SQLServerContextModelSnapshot.cs",
+              "RelativeToolTip": "WebApiVendas\\Migrations\\SQLServerContextModelSnapshot.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T14:19:16.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Vendedor.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Entidades\\Vendedor.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Entidades\\Vendedor.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Entidades\\Vendedor.cs",
+              "RelativeToolTip": "WebApiVendas\\Entidades\\Vendedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:23:23.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Entidades\\Cliente.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Entidades\\Cliente.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Entidades\\Cliente.cs",
+              "RelativeToolTip": "WebApiVendas\\Entidades\\Cliente.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:23:08.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SQLServerContext.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Data\\Context\\SQLServerContext.cs",
+              "RelativeDocumentMoniker": "WebApiVendas\\Data\\Context\\SQLServerContext.cs",
+              "ToolTip": "C:\\Users\\vitor.nononha\\Desktop\\Projeto_Aula2\\persistenciaAula3\\WebApiVendas\\WebApiVendas\\Data\\Context\\SQLServerContext.cs",
+              "RelativeToolTip": "WebApiVendas\\Data\\Context\\SQLServerContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T14:00:52.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
