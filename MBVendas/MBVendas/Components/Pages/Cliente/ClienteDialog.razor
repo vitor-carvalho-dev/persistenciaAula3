@@ -1,0 +1,184 @@
+﻿@using MBVendas.Model.Dtos
+@using MBVendas.Service
+@using MBVendas.ViewModel
+@using MudBlazor
+@inject ClienteApiService ClienteService
+@inject ISnackbar Snackbar
+@inject IDialogService Dialog
+
+<MudDialog>
+    <TitleContent>
+        <MudText Typo="Typo.h6" Class="tituloFormulario">
+            <MudIcon Icon="@Icons.Material.Filled.Person" Class="mr-3" /> @viewModel.TituloFormulario
+        </MudText>
+    </TitleContent>
+    <DialogContent>
+        <MudContainer Style="max-height: 70vh; overflow-y: auto;">
+            <EditForm Model="@viewModel" OnValidSubmit="OnValidSubmit">
+                <DataAnnotationsValidator />
+                <MudGrid>
+                    <MudItem xs="12" sm="6">
+                        <MudTextField Label="Nome Completo"
+                                      @bind-Value="viewModel.Nome"
+                                      For="@(() => viewModel.Nome)"
+                                      Required="true"
+                                      Immediate="true" />
+                    </MudItem>
+
+                    <MudItem xs="12" sm="6">
+                        <MudTextField Label="CPF"
+                                      @bind-Value="viewModel.Cpf"
+                                      For="@(() => viewModel.Cpf)"
+                                      Mask="@(new PatternMask("000.000.000-00"))"
+                                      Required="true"
+                                      Immediate="true" />
+                    </MudItem>
+
+                    <MudItem xs="12" sm="6">
+                        <MudTextField Label="Email"
+                                      @bind-Value="viewModel.Email"
+                                      For="@(() => viewModel.Email)"
+                                      InputType="InputType.Email"
+                                      Required="true"
+                                      Immediate="true" />
+                    </MudItem>
+
+                    <MudItem xs="12" sm="6">
+                        <MudTextField Label="Senha"
+                                      @bind-Value="viewModel.Senha"
+                                      For="@(() => viewModel.Senha)"
+                                      InputType="InputType.Password"
+                                      Immediate="true" />
+                    </MudItem>
+                </MudGrid>
+
+                <ValidationSummary />
+
+                <MudDivider Class="my-4" />
+
+                <MudButton Color="Color.Primary"
+                           Variant="Variant.Filled"
+                           Disabled="@salvando"
+                           ButtonType="ButtonType.Submit">
+                    @if (salvando)
+                    {
+                        <MudProgressCircular Color="Color.Secondary" Size="Size.Small" Indeterminate="true" />
+                        <MudText Class="ml-2">Salvando...</MudText>
+                    }
+                    else
+                    {
+                        <MudText>@viewModel.TextoBotao</MudText>
+                    }
+                </MudButton>
+                <MudButton OnClick="Cancel" Class="ml-2">Cancelar</MudButton>
+            </EditForm>
+        </MudContainer>
+    </DialogContent>
+</MudDialog>
+
+@code {
+    [CascadingParameter] IMudDialogInstance MudDialog { get; set; }
+    [Parameter] public int IdCliente { get; set; }
+
+    private ClienteViewModel viewModel = new();
+    private bool salvando = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            if (IdCliente > 0)
+            {
+                var cliente = await ClienteService.ObterClientePorIdAsync(IdCliente);
+
+                if (cliente != null)
+                {
+                    viewModel = new ClienteViewModel
+                        {
+                            IdCliente = cliente.IdCliente,
+                            Nome = cliente.Nome,
+                            Cpf = cliente.Cpf,
+                            Email = cliente.Email,
+                            TituloFormulario = "Editar Cliente",
+                            TextoBotao = "Salvar Alterações",
+                            IsEdicao = true
+                        };
+                }
+                else
+                {
+                    Snackbar.Add("Cliente não encontrado!", Severity.Warning);
+                }
+            }
+            else
+            {
+                viewModel = new ClienteViewModel
+                    {
+                        TituloFormulario = "Novo Cliente",
+                        TextoBotao = "Cadastrar",
+                        IsEdicao = false
+                    };
+            }
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Erro ao inicializar formulário: {ex.Message}", Severity.Error);
+        }
+    }
+
+    private async Task OnValidSubmit(EditContext context)
+    {
+        await SalvarCliente();
+    }
+
+    private async Task SalvarCliente()
+    {
+        try
+        {
+            salvando = true;
+
+            var dto = new SalvarClienteDto
+                {
+                    Nome = viewModel.Nome,
+                    Cpf = viewModel.Cpf?.Replace(".", "").Replace("-", ""),
+                    Email = viewModel.Email,
+                    Senha = viewModel.Senha
+                };
+
+            bool sucesso;
+            if (viewModel.IsEdicao)
+            {
+                sucesso = await ClienteService.AtualizarClienteAsync(viewModel.IdCliente, dto);
+                if (sucesso)
+                    Snackbar.Add("Cliente atualizado com sucesso!", Severity.Success);
+            }
+            else
+            {
+                sucesso = await ClienteService.AdicionarClienteAsync(dto);
+                if (sucesso)
+                    Snackbar.Add("Cliente cadastrado com sucesso!", Severity.Success);
+            }
+
+            if (sucesso)
+            {
+                MudDialog.Close(DialogResult.Ok(true));
+            }
+            else
+            {
+                Snackbar.Add("Erro ao salvar cliente.", Severity.Error);
+            }
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Erro interno: {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            salvando = false;
+        }
+    }
+
+    void Cancel()
+    {
+        MudDialog.Cancel();
+    }
+}

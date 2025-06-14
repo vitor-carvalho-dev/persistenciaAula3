@@ -1,0 +1,142 @@
+﻿@page "/clientes"
+@using MBVendas.Model.Dtos
+@using MBVendas.Service
+@using MudBlazor
+@inject ClienteApiService ClienteService
+@inject IDialogService DialogService
+@inject ISnackbar Snackbar
+
+<style>
+    .tituloFormulario {
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        font-size: 1em;
+    }
+</style>
+
+<MudCard>
+    <MudCardContent>
+        <MudText Typo="Typo.h6" Class="mb-4">Clientes Cadastrados</MudText>
+
+        <MudPaper Class="d-flex justify-end flex-grow-1 mb-6" Elevation="0">
+            <MudButton Color="Color.Primary"
+                       Variant="Variant.Filled"
+                       StartIcon="@Icons.Material.Filled.Add"
+                       Disabled="@_dialogOpen"
+                       OnClick="@(() => ShowDialog(0))">
+                Adicionar Novo Cliente
+            </MudButton>
+        </MudPaper>
+
+        <MudDataGrid Items="@_clientes" SortMode="SortMode.Multiple" Hover="true">
+            <Columns>
+                <PropertyColumn Property="x => x.IdCliente" Title="ID" />
+                <PropertyColumn Property="x => x.Nome" Title="Nome" />
+                <PropertyColumn Property="x => x.Cpf" Title="CPF" />
+                <PropertyColumn Property="x => x.Email" Title="Email" />
+                <TemplateColumn StickyRight="true" Title="Ações">
+                    <CellTemplate>
+                        <MudIconButton Color="Color.Primary"
+                                       Icon="@Icons.Material.Filled.Edit"
+                                       Size="Size.Small"
+                                       OnClick="@(() => ShowDialog(context.Item.IdCliente))" />
+                        <MudIconButton Color="Color.Error"
+                                       Icon="@Icons.Material.Filled.Delete"
+                                       Size="Size.Small"
+                                       OnClick="@(() => ConfirmarExclusaoCliente(context.Item))" />
+                    </CellTemplate>
+                </TemplateColumn>
+            </Columns>
+            <PagerContent>
+                <MudDataGridPager T="ClienteDto" />
+            </PagerContent>
+        </MudDataGrid>
+    </MudCardContent>
+</MudCard>
+
+@code {
+    private List<ClienteDto> _clientes = new();
+    private bool _dialogOpen = false;
+
+    private readonly DialogOptions _dialogOptions = new()
+        {
+            CloseButton = true,
+            MaxWidth = MaxWidth.Medium,
+            FullWidth = true
+        };
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CarregarClientesAsync();
+    }
+
+    private async Task CarregarClientesAsync()
+    {
+        try
+        {
+            _clientes = await ClienteService.ObterClientesAsync();
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Erro ao carregar clientes: {ex.Message}", Severity.Error);
+        }
+    }
+
+    private async Task ShowDialog(int idCliente)
+    {
+        try
+        {
+            _dialogOpen = true;
+
+            var parameters = new DialogParameters
+            {
+                { "IdCliente", idCliente }
+            };
+
+            var dialog = DialogService.Show<ClienteDialog>(
+                idCliente == 0 ? "Novo Cliente" : "Editar Cliente",
+                parameters,
+                _dialogOptions
+            );
+
+            var result = await dialog.Result;
+
+            if (!result.Canceled)
+            {
+                await CarregarClientesAsync();
+                StateHasChanged();
+            }
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Erro ao abrir formulário: {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            _dialogOpen = false;
+        }
+    }
+
+    private async Task ConfirmarExclusaoCliente(ClienteDto cliente)
+    {
+        var confirmed = await DialogService.ShowMessageBox(
+            "Confirmação de Exclusão",
+            $"Deseja realmente excluir o cliente '{cliente.Nome}'?",
+            yesText: "Sim",
+            cancelText: "Não"
+        );
+
+        if (confirmed == true)
+        {
+            var sucesso = await ClienteService.ExcluirClienteAsync(cliente.IdCliente);
+            if (sucesso)
+                Snackbar.Add($"Cliente '{cliente.Nome}' excluído com sucesso.", Severity.Success);
+            else
+                Snackbar.Add("Falha ao excluir cliente.", Severity.Error);
+
+            await CarregarClientesAsync();
+            StateHasChanged();
+        }
+    }
+}
